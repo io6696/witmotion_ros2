@@ -188,7 +188,7 @@ void WITMotionNode::handleSerialData(uint8_t raw_data)
             }
             tf2::Quaternion qua;
             qua.setRPY(angle_radian[0], angle_radian[1], angle_radian[2]);
-            imu_msg.orientation = tf2::toMsg(qua);
+            imu_msg_.orientation = tf2::toMsg(qua);
             std::copy(imu_orientation_covariance_.begin(), imu_orientation_covariance_.end(), imu_msg_.orientation_covariance.begin());
 
             imu_msg_.angular_velocity.x = imu_angular_velocity_[0];
