@@ -15,7 +15,8 @@
 #include <std_msgs/msg/u_int32.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <builtin_interfaces/msg/time.hpp>
-#include <tf2/LinearMath/Quaternion.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+
 #include <asio.hpp>
 #include <thread>
 #include <vector>
